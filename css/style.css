@@ -82,7 +82,8 @@ button{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-@media screen and (max-device-width: 600px){
+
+@media screen and (max-width: 600px){
   #leftSide{
     display: none;
   }
