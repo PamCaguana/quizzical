@@ -1,0 +1,93 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 150px;
+}
+
+h1,h2,h3{
+  text-align: center;
+}
+
+h1{
+  font-size: 5rem;
+  color: white;
+  margin-top: 0px;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3,h4{
+  font-size: 2rem;
+  color: rgb(11,30,151);
+}
+
+section{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#leftSide, #rightSide{
+  width: 50%;
+  float: left;
+}
+
+#leftSide{
+  height: 100vh;
+  background-color: rgb(122, 146, 233);
+}
+
+#rightSide{
+  background-color: rgb(11,30,151);
+  height: 100vh;
+}
+
+#question{
+  height: fit-content;
+  color: white;
+}
+
+#answer{
+  visibility: hidden;
+}
+
+button{
+  width: 150px;
+  height: 30px;
+  background-color: rgb(122, 146, 233);
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media only screen and (max-width: 600px){
+  #leftSide{
+    display: none;
+  }
+
+  #rightSide{
+    width: 100%;
+  }
+}
